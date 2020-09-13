@@ -2,11 +2,13 @@
 
 In this exercise you will make use of Eueler's method to solve ODEs related to classical motion. The initial goal of the project is to numerically calculate the trajectory for a projectile starting near the surface of the earth.
 
-Examine the program euler.cpp. The program provides a simple shell for you to use as the basis of your code. For starters the program is only set up to take parameters from the command line that can be used to set the initial conditions for your simulation of the projectile motion.
+Very basic started code is provided in C++ and Python. You can use either language to perform your study. But after you get your code running, verify that you can produce the same results with both languages. 
+
+Examine the program euler.cpp or euler.py. The program provides a simple shell for you to use as the basis of your code. For starters the program is only set up to take parameters from the command line that can be used to set the initial conditions for your simulation of the projectile motion.
 
 **The easy case: no air resistance**
 
-Modify the program to use Euler's method to solve for the trajectory of the projectile based on the initial conditions entered into your program. This version of the problem is not very complicated and you can also calculate the analytic solution for comparison.
+Complete the program to use Euler's method to solve for the trajectory of the projectile based on the initial conditions entered into your program. This version of the problem is not very complicated and you can also calculate the analytic solution for comparison.
 
 Study and assess the performance of your algorithm, you can do this in a variety of ways, for example:
 
