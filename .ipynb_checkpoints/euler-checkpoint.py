@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import argparse 
-import math
 
 
 parser = argparse.ArgumentParser(description='euler.py')
@@ -16,25 +15,6 @@ args = parser.parse_args()
 vinit=args.vinit
 theta0=args.theta0
 dt=args.dt
-
-g = 9.81
-theta_rad = math.pi * theta0 / 180.0
-
-t = 0.0
-x = 0.0
-y = 0.0
-vx = vinit * math.cos(theta_rad)
-vy = vinit * math.sin(theta_rad)
-
-while y >= 0.0:
-    print(f"{t:.8e} {x:.8e} {y:.8e} {vx:.8e} {vy:.8e}")
-    ax = 0.0
-    ay = -g
-    x = x + vx * dt
-    y = v + vy * dt
-    vx = vx + ax * dt
-    vy = vy + ay * dt
-    t = t + dt
 
 print("Simulating projectile motion with params:")
 print("(vinit,theta0,dt)=(%7.2lf,%7.2f,%7.2f)" % (vinit,theta0,dt))
